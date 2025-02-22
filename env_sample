@@ -1,0 +1,6 @@
+# OpenAI API Configuration
+OPENAI_API_KEY=ollama
+OPENAI_BASE_URL=http://host.docker.internal:11434/v1/
+
+# Model Configuration
+LLM_MODEL=qwen2.5-coder:7b

@@ -1,0 +1,14 @@
+echo "node_modules/
+dist/
+venv/
+__pycache__/
+.DS_Store
+.env
+*.log
+*.pyc
+.vscode/
+.idea/
+*.swp
+" > .gitignore
+
+python-ex/

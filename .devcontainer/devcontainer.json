@@ -1,0 +1,19 @@
+{
+  "name": "Python Dev Container for Ollama",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "runArgs": ["--add-host=host.docker.internal:host-gateway"],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "mounts": [
+    "source=C:\\Users\\sergey.kosik\\Code\\AccountsPrep,target=/workspaces/AccountsPrep,type=bind"
+  ]
+}
