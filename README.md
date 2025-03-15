@@ -1,6 +1,12 @@
 ## Setup
 Create .env file based on env_sample.
 
+### Updated requirements
+
+Once the requirements.txt is updated run:
+
+`pip install -r requirements.txt`
+
 ## How to run
 
 Note: make sure the ollama is running.
