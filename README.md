@@ -52,3 +52,14 @@ from terminal:
 Individual file processing
 
 `streamlit run pr-review/app_individual.py`
+
+
+### AI & LLM Engineering Course
+
+https://github.com/pdichone/ai-llm-engineer-course 
+
+RAG:
+https://github.com/pdichone/vector-databases-course
+
+https://docs.pinecone.io/guides/get-started/quickstart
+https://docs.trychroma.com/docs/overview/getting-started
