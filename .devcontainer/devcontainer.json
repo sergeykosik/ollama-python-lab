@@ -14,6 +14,7 @@
     }
   },
   "mounts": [
-    "source=C:\\Users\\sergey.kosik\\Code\\AccountsPrep,target=/workspaces/AccountsPrep,type=bind"
+    "source=C:\\Users\\sergey.kosik\\Code\\AccountsPrep,target=/workspaces/AccountsPrep,type=bind",
+    "source=C:\\Temp\\llm,target=/mnt/c/Temp/llm,type=bind"
   ]
 }

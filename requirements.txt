@@ -6,8 +6,9 @@ pandas
 python-dotenv
 
 # Dependencies for notebook
-ipython 
-ipykernel
+# Uncomment when required
+# ipython 
+# ipykernel
 
 # Dependencies for PR Reviews
 requests
@@ -16,19 +17,21 @@ tiktoken
 # Dependencies for the 100 days of LLM course, AI && LLM course
 torch
 transformers
+ollama
+chromadb
 
-# OpenAI Agents
-crewai-tools
-crewai
-google-search-results
-langchain-community
-langchain_ollama
-duckduckgo-search
-onnxruntime
-langgraph
-datasets
-matplotlib
-sentence_transformers
+# OpenAI Agents Course
+# crewai-tools
+# crewai
+# google-search-results
+# langchain-community
+# langchain_ollama
+# duckduckgo-search
+# onnxruntime
+# langgraph
+# datasets
+# matplotlib
+# sentence_transformers
 
 # AWS Bedrock
 boto3
