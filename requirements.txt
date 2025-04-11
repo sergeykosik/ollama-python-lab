@@ -19,6 +19,7 @@ torch
 transformers
 ollama
 chromadb
+pandas
 
 # OpenAI Agents Course
 # crewai-tools
