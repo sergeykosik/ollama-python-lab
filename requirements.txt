@@ -20,6 +20,10 @@ transformers
 ollama
 chromadb
 pandas
+langchain-community
+langchain_ollama
+selenium
+unstructured
 
 # OpenAI Agents Course
 # crewai-tools
