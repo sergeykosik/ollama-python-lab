@@ -20,4 +20,13 @@ Changes made in this PR:
 {diff}
 ```"""
 
-DEFAULT_OLLAMA_MODEL = "qwen2.5-coder:7b"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Use model from .env or fallback to qwen3:8b
+DEFAULT_OLLAMA_MODEL = os.getenv("LLM_MODEL", "qwen3:8b")
+
+# Use max tokens from .env or fallback to 32000
+DEFAULT_MAX_TOKENS = int(os.getenv("MAX_TOKENS", "32000"))

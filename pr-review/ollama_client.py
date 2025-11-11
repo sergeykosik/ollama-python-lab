@@ -1,9 +1,14 @@
 from openai import OpenAI
 from typing import Generator, List, Dict, Tuple
 import tiktoken
+from config import DEFAULT_OLLAMA_MODEL, DEFAULT_MAX_TOKENS
 
 class OllamaClient:
-    def __init__(self, model: str = "qwen2.5-coder:7b", max_tokens: int = 32000):
+    def __init__(self, model: str = None, max_tokens: int = None):
+        if model is None:
+            model = DEFAULT_OLLAMA_MODEL
+        if max_tokens is None:
+            max_tokens = DEFAULT_MAX_TOKENS
         self.client = OpenAI(api_key="ollama", base_url="http://host.docker.internal:11434/v1/")
         self.model = model
         self.max_tokens = max_tokens

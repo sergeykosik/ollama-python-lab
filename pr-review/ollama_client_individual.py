@@ -1,8 +1,11 @@
 from openai import OpenAI
 from typing import Generator
+from config import DEFAULT_OLLAMA_MODEL
 
 class OllamaClient:
-    def __init__(self, model: str = "qwen2.5-coder:7b"):
+    def __init__(self, model: str = None):
+        if model is None:
+            model = DEFAULT_OLLAMA_MODEL
         self.client = OpenAI(api_key="ollama", base_url="http://host.docker.internal:11434/v1/")
         self.model = model
 

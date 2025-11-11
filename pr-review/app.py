@@ -18,6 +18,7 @@ def initialize_session_state():
     if 'github_client' not in st.session_state:
         github_token = os.getenv('GITHUB_TOKEN')
         if not github_token:
+            st.session_state.github_client = None
             st.error("GitHub token not found in .env file!")
         else:
             st.session_state.github_client = GithubPRClient(github_token)
