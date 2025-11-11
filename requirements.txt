@@ -4,6 +4,8 @@ PyPDF2
 python-docx 
 pandas
 python-dotenv
+langchain
+langgraph
 
 # Dependencies for notebook
 # Uncomment when required
