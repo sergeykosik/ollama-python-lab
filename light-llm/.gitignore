@@ -49,7 +49,13 @@ runs/
 wandb/
 
 # Data
-data/
+data/*
+!data/
+!data/__init__.py
+!data/dataset.py
+!data/README.md
+!data/samples/
+!data/samples/**
 corpus.txt
 *.txt.gz
 *.jsonl
