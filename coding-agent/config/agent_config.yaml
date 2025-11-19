@@ -1,0 +1,64 @@
+ollama:
+  base_url: "http://localhost:11434"
+  model: "codellama:13b"
+  temperature: 0.1
+  context_window: 8192
+  timeout: 120
+
+vector_store:
+  type: "chromadb"
+  persist_directory: "./data/vector_store"
+  collection_name: "codebase"
+  chunk_size: 1000
+  chunk_overlap: 200
+
+embeddings:
+  model: "nomic-embed-text"  # Ollama embedding model
+  batch_size: 32
+
+database:
+  host: "localhost"
+  port: 3306
+  database: "your_db"
+  pool_size: 5
+  max_overflow: 10
+  # credentials loaded from .env
+
+indexing:
+  watch_directories:
+    - "./src"
+    - "./docs"
+  file_patterns:
+    - "*.cs"
+    - "*.ts"
+    - "*.js"
+    - "*.py"
+    - "*.java"
+    - "*.md"
+    - "*.sql"
+    - "*.json"
+  ignore_patterns:
+    - "node_modules/**"
+    - "bin/**"
+    - "obj/**"
+    - "*.min.js"
+    - "*.min.css"
+    - "dist/**"
+    - "build/**"
+    - "__pycache__/**"
+    - "*.pyc"
+    - ".git/**"
+  max_file_size_mb: 10
+
+agent:
+  max_iterations: 15
+  max_execution_time: 300  # seconds
+  verbose: true
+  handle_parsing_errors: true
+
+logging:
+  level: "INFO"
+  file: "./logs/agent.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
